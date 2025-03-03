@@ -15,7 +15,6 @@
 //     document.write("<div>"+j+"</div>");
 // }
 
-
 let months = "January | February | March | April | May | June | July | August | September | October | November | December";
 
 let monthsArr = months.split(" | ");
@@ -28,3 +27,16 @@ for(item of monthsArr){
 out+="</select>";
 
 document.write(out);
+
+let table = "<table border=\"1\" width=\"100%\">";
+for(let row = 1; row<=10;row++){
+    table += "<tr>";
+        for(let col = 1;col<=10;col++){
+            table+=`<td>${row*col}</td>`;
+        }
+    table +="</tr>";
+}
+table+="</table>";
+
+document.write(table);
+
