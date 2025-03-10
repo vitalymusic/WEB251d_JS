@@ -50,3 +50,5 @@ switch(x){
 
 
 document.write(dayOfWeek);
+
+
