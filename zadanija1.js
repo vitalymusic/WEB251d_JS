@@ -89,3 +89,6 @@ cart.forEach((item,i)=>{
 })
 
 document.write(`Сумма за все товары: ${total.toFixed(2)} &euro;`);
+
+// Sdelatj spisok v vide tablici
+
