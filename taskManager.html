@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task manager</title>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+
+</head>
+<body>
+    <div class="content">
+        <input type="text" name="" id="inp" placeholder="Write your task">
+        <button id="addTaskBtn" >Add task</button>
+
+        <div class="tasks">
+
+        </div>
+    </div>
+
+
+
+    <script>
+        const input = document.querySelector("#inp");
+        const addTaskBtn = document.querySelector("#addTaskBtn");
+        const tasks = document.querySelector(".tasks");
+
+
+        addTaskBtn.onclick = function(){
+            addnewTask();
+        };
+
+        function addnewTask(){
+            tasks.insertAdjacentHTML('afterbegin',`
+                <div class="task">
+                    <b>${input.value}</b>
+                    <button onclick="markTask(this)">Completed</button>
+                    <button onclick="deleteTask(this)">Delete task</button>
+                </div>    
+            `);
+            input.value="";
+
+        }
+
+        function markTask(el){
+            el.parentElement.style.background = "yellow";
+
+        }
+        function deleteTask(el){
+            if(confirm("Are you sure????")){
+                el.parentElement.remove();
+            }
+            
+        }
+    </script>
+</body>
+</html>
