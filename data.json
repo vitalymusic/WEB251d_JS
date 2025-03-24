@@ -1,6 +1,9 @@
 {
   "users" : [
-      { "id" : 1 , "name" : "Horacio" }
+      { "id" : 1 , "name" : "Alex","email":"alex@inbox.lv" },
+      { "id" : 2 , "name" : "Andrew","email":"andrew@inbox.lv" },
+      { "id" : 3 , "name" : "Anna","email":"anna@inbox.lv" },
+      { "id" : 4 , "name" : "Robert","email":"robert@inbox.lv" }
   ],
   "posts":[],
   "content":[
