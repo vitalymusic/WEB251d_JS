@@ -1,16 +1,73 @@
 {
-  "users" : [
-      { "id" : 1 , "name" : "Alex","email":"alex@inbox.lv" },
-      { "id" : 2 , "name" : "Andrew","email":"andrew@inbox.lv" },
-      { "id" : 3 , "name" : "Anna","email":"anna@inbox.lv" },
-      { "id" : 4 , "name" : "Robert","email":"robert@inbox.lv" }
-  ],
-  "posts":[],
-  "content":[
+  "users": [
     {
-      "main":[],
-      "about":[],
-      "contacts":[]
+      "id": "1",
+      "name": "Alex",
+      "email": "alex@inbox.lv"
+    },
+    {
+      "id": "2",
+      "name": "Andrew",
+      "email": "andrew@inbox.lv"
+    },
+    {
+      "id": "3",
+      "name": "Anna",
+      "email": "anna@inbox.lv"
+    },
+    {
+      "id": "4",
+      "name": "Robert",
+      "email": "robert@inbox.lv"
+    },
+    {
+      "id": "11d7",
+      "name": "test",
+      "email": "vitalijs.korabelnikovs@gmail.com"
+    },
+    {
+      "id": "30fd",
+      "name": "Vitālijs",
+      "email": "vitaly.music@inbox.lv"
+    },
+    {
+      "id": "db26",
+      "name": "Vitālijs",
+      "email": "oyakovleva856@gmail.com"
+    },
+    {
+      "id": "6f9c",
+      "name": "Vitālijs Korabeļņikovs",
+      "email": "vitaly.music@inbox.lv"
+    },
+    {
+      "id": "3260",
+      "name": "Vitālijs Korabeļņikovs",
+      "email": "vitaly.music@inbox.lv"
+    },
+    {
+      "id": "9dfe",
+      "name": "Vitālijs Korabeļņikovs",
+      "email": "vitaly.music@inbox.lv"
+    },
+    {
+      "id": "6b6c",
+      "name": "Vitālijs Korabeļņikovs",
+      "email": "vitaly.music@inbox.lv"
+    },
+    {
+      "id": "dc4f",
+      "name": "Vitālijs Korabeļņikovs",
+      "email": "vitaly.music@inbox.lv"
+    }
+  ],
+  "posts": [],
+  "content": [
+    {
+      "main": [],
+      "about": [],
+      "contacts": [],
+      "id": "f979"
     }
   ]
 }

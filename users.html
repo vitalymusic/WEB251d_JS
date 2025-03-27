@@ -18,17 +18,22 @@
 
     <div class="usersTable">
         <table>
+            <thead>
             <tr>
                 <th>Username</th>
                 <th>Email</th>
             </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
 
         </table>
     </div>
 
 
     <script>
-        const USERS = "http://localhost:9000/users";
+        const USERS = "http://localhost:3000/users";
 
 
         let form = document.querySelector("form");
@@ -40,7 +45,7 @@ form.onsubmit = (event)=>{
     try{
         fetch(USERS,{
             method:"post",
-            mode:'no-cors',
+            // mode:'no-cors',
             body:JSON.stringify(
                 {
                     name:document.querySelector("input[name=\"name\"]").value,
@@ -48,7 +53,7 @@ form.onsubmit = (event)=>{
                 }
             ),
             headers: {
-                // 'Content-type': 'application/json; charset=UTF-8',
+                'Content-type': 'application/json; charset=UTF-8',
         
               },
         },
@@ -60,41 +65,44 @@ form.onsubmit = (event)=>{
         .then((response)=>{
             console.log(response);
             alert("Data added");
-            form.reset();
+            // form.reset();
+            loadUsers();
         })
     }
     catch(error){
         alert("error");
     } ;
 
-}
+    
 
+}
 
     function loadUsers(){
 
         fetch(USERS,{
-            mode:'no-cors',
+            // mode:'no-cors',
             headers:{
-                // 'Access-Control-Allow-Origin': '*' 
+                'Content-type': 'application/json; charset=UTF-8',
             }
         })
 
         .then((response)=>{
-            return response.text();
+            return response.json();
         })
         .then((response)=>{
-            return loadData(response)
+            loadData(response)
         })
     }
 
 
     function loadData(data){
-        return console.log(data);
+        // return console.log(data);
+        document.querySelector("table tbody").innerHTML="";
 
     for(item of data){
-        document.querySelector("table").innerHTML+=`
+        document.querySelector("table tbody").innerHTML+=`
         <tr>
-            <td>${item.name}<td>
+            <td>${item.name}</td>
             <td>${item.email}</td>
         </tr>
     `
